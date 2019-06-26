@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-import java.util.Scanner;
-
-
 /*Crea un array de caracteres que contenga los valores del abecedario de la ‘A’ a la ‘Z’ (solo las
 mayúsculas). Luego mediante un método, ir pidiendo al usuario posiciones del array por teclado y
 si la posición es correcta, se añadirá a una cadena.
@@ -19,21 +16,13 @@ Por ejemplo, si escribo los siguientes números
 Cadena resultante: AFZ
 */
 
-
-
-
-
 public class ejercicio_2_9 {
 	static Scanner sc = new Scanner (System.in);
-
 	public static void main(String[] args) {
-		
 				
+		rellenar();
 			
-			rellenar();
-			
-	}
-	
+	}	
 	static  void  rellenar() {
 		
 		int contador = 0;
@@ -46,33 +35,28 @@ public class ejercicio_2_9 {
 		int pocision;
 		
 		String nuevaCad = "";
-		
-		
+				
 		System.out.println("Ingrese un numero : ");
 		pocision = sc.nextInt();
 		
+		while ( pocision > 26 || pocision < - 1 ) {
+			
+			contador++;
+			System.out.println(" Error ingrese  otro numero : ");
+			pocision = sc.nextInt();			
+		}
+				
 		while ( pocision >= 0 && pocision <= 26 ) {
 			
 			if ( pocision != -1) {
 			nuevaCad += abc[pocision];
 			System.out.println("Ingrese otro numero : ");
 			pocision = sc.nextInt();
-			}
-			
-			
-			
+			}			
 		}
-		
-		while ( pocision > 26 ) {
-			
-				contador++;
-				System.out.println("Ingrese numero : ");
-				pocision = sc.nextInt();
 				
-			}
-				
-			System.out.println("Cadean resultante"+nuevaCad);
-		
+		System.out.println("Cadena resultante :"+nuevaCad);
+		System.out.println("Usted tuvo "+contador+" errores");
 
 	}
 

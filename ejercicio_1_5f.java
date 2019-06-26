@@ -14,7 +14,7 @@ public class ejercicio_1_5f {
 		
 		for ( int i = cad.length()-1; i >= 0; i--) {
 			invertidaCad +=cad.charAt(i);
-			
+			f
 		}
 		System.out.println("La cadena " + cad + " invertida es :" + invertidaCad);
 

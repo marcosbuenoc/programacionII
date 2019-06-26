@@ -29,12 +29,14 @@ public class ejercicio_2_7 {
 			
 			i = 0;
 			
-			while (i < 2) {
+			while (i < 2) 
+			
+			{
 				
 				if ( i == 0) {
 				
-				System.out.println("[Fila " + (k+1) +" ] .Ingrese codigo del grupo : ");
-				inscripciones [k][i]= sc.nextInt();
+					System.out.println("[Fila " + (k+1) +" ] .Ingrese codigo del grupo : ");
+					inscripciones [k][i]= sc.nextInt();
 							
 				}
 				
@@ -44,11 +46,14 @@ public class ejercicio_2_7 {
 					inscripciones [k][i]= sc.nextInt();
 					total += inscripciones [k][i];
 									
-					}
+				}
 				
 				i++;
+
 			}
+		
 			k++;
+
 		}
 	}
 	
@@ -58,11 +63,4 @@ public class ejercicio_2_7 {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-
 }

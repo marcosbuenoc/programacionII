@@ -28,6 +28,7 @@ public class ejercicio_2_6 {
 			estudiantes[k][i]= sc.nextLine();
 			i++;
 			}
+			
 		
 		k++;
 			
